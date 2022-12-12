@@ -166,11 +166,11 @@ li:hover {
 }
 
 .banner-2 {
-    background-image: url('./midia/vegeta.png');
+    background-image: url('https://raw.githubusercontent.com/GuilhermeSSx/html-css-dbz/master/midia/vegeta.png');
 }
 
 .banner-3 {
-    background-image: url('./midia/gohan.png');
+    background-image: url('https://raw.githubusercontent.com/GuilhermeSSx/html-css-dbz/master/midia/gohan.png');
 }
 
 footer {
