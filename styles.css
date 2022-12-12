@@ -166,11 +166,11 @@ li:hover {
 }
 
 .banner-2 {
-    background-image: url('https://static.wikia.nocookie.net/liga-da-zueira-oficial/images/d/dd/Vegeta_DBZ.png/revision/latest?cb=20200613041950&path-prefix=pt-br');
+    background-image: url('./midia/vegeta.png');
 }
 
 .banner-3 {
-    background-image: url('https://static.wikia.nocookie.net/animeverso/images/8/8e/Kid_gohan_render_dbz_kakarot_by_maxiuchiha22_ddec4fw-fullview.png/revision/latest?cb=20220208182312&path-prefix=pt-br');
+    background-image: url('./midia/gohan.png');
 }
 
 footer {
