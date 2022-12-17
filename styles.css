@@ -64,6 +64,7 @@ li:hover {
     font-size: 50px;
     text-shadow: 0 0 20px #F29A2E, 0 0 20px black;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    border-bottom: 1px solid #F29A2E;
 }
 
 #trailer-container {
@@ -252,6 +253,16 @@ span {
         margin-top: 5px;
         grid-template-columns: 1fr;
     }
+
+    /* <!---Elenco---!> */
+
+    
+
+
+
+
+
+
 
 }
 
