@@ -92,7 +92,7 @@ li:hover {
 }
 
 .trailer {
-    width: 100%;
+    width: 70%;
 }
 
 #sinopse {
@@ -209,6 +209,7 @@ span {
     align-items: center;
 }
 
+/* MEDIAQUERY */
 @media(max-width: 768px) {
     .footer-navigation {
         display: block;
@@ -264,19 +265,60 @@ span {
         margin-top: 5px;
         grid-template-columns: 1fr;
     }
-
-    /* <!---Elenco---!> */
-
-    
-
-
-
-
-
-
-
 }
 
+.elenco-cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+.elenco-nome-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #F29A2E;
+    border-radius: 5px;
+}
+
+.card-e {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.img-elenco {
+    width: 150px;
+    height: 160px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.description-elenco {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border: 1px solid #f22e2e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 177px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.nome-elenco {
+    display: flex;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-bottom: 2px solid #F29A2E;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
 
 
 
