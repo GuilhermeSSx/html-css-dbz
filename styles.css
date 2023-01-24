@@ -268,6 +268,7 @@ span {
         margin-top: 5px;
         grid-template-columns: 1fr;
     }
+
 }
 
 
@@ -327,29 +328,89 @@ span {
 
 /* COMENTARIOS */
 body {
-    background-color: #000;
     color: #fff;
 }
 
-.comments-container {
+.h1comment {
+    text-align: center;
+    margin-top: 60px;
+    text-shadow: 0 0 20px #F29A2E, 0 0 20px black;
+    margin-bottom: 60px;
+}
+
+.comentarios {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.comment-box {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.comment {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+}
+
+.img-comment {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.name {
+    background-color: transparent;
+    margin-left: 15px;
+    font-weight: bold;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.form-comment {
-    margin-top: 10px;
+.text {
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+/* CONTATO */
+.body-contact {
+    background-size: cover;
+    position: 50% 90%;
+    background-repeat: no-repeat;
+    background-image: url('./midia/bg-contato.jpg');
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.form-contato {
+    margin-top: 20px;
+    width: 50%;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    text-shadow: 0 0 20px #F29A2E, 0 0 20px black;
 }
 
 label {
-    margin: 10px 0;
+    margin: 5px 0;
     background-color: transparent;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
@@ -366,93 +427,82 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    width: 200px;
+    height: 60px;
+    background-color: #ef2024;
     color: #fff;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
+    padding: 5px 5px;
+    align-items: center;
+    border-radius: 5px;
     cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #ffffff;
+    background-color: #fff;
+    color: #ef2024;
 }
 
-#comment-txtarea {
+#message {
     resize: vertical;
     min-height: 50px;
     max-height: 300px;
-    height: 200px;
-}
-
-.h1comment {
-    margin-top: 60px;
-}
-
-.h2comment {
-    margin-top: 30px;
-}
-
-.comments {
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.comment {
-    background-color: #333;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.name {
-    font-weight: bold;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-
-/* CONTATO */
-
-.contact-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-contato {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    border-bottom: 1px solid #ef2024;
-    border-left: 1px solid #ef2024;
-    border-right: 1px solid #ef2024;
+    height: 190px;
 }
 
 .h1contato {
+    background-color: transparent;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px #F29A2E, 0 0 20px black;
 }
 
-.img-banner-lateral {
+.img-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    height: 300px;
-    background-size: contain;
+    width: 50%;
+    height: 320px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./midia/info-test.gif');
-    border-top: 1px solid #ef2024;
-    border-left: 1px solid #ef2024;
-    border-right: 1px solid #ef2024;
-    border-radius: 5px;
+    background-image: url('./midia/info-test.jpg');
+    border-radius: 20px;
+    
+}
+
+/* MEDIAQUERY contato*/
+@media(max-width: 767px) {
+
+    .img-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./midia/info-test.jpg');
+        border-radius: 20px;
+    }
+
+    .form-contato {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        text-shadow: 0 0 20px #F29A2E, 0 0 20px black;
+    }
+
 }
